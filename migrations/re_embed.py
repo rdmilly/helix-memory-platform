@@ -18,7 +18,7 @@ import psycopg2
 import psycopg2.extras
 
 DSN = os.getenv('POSTGRES_DSN',
-    'host=helix-postgres user=helix password=REDACTED dbname=helix')
+    'host=helix-postgres user=helix dbname=helix')
 EMBEDDINGS_URL = os.getenv('EMBEDDINGS_URL', 'http://helix-embeddings:8000')
 MODEL = 'bge-large-en-v1.5'
 BATCH = 32   # embed N texts per HTTP call

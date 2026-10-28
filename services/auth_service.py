@@ -23,7 +23,7 @@ from fastapi.responses import Response
 
 log = logging.getLogger("helix.auth")
 
-JWT_SECRET = os.environ.get("JWT_SECRET", "REDACTED")
+JWT_SECRET = os.environ.get("JWT_SECRET", "")
 JWT_ALGO = "HS256"
 JWT_EXPIRE_DAYS = 7
 COOKIE_NAME = "helix_session"

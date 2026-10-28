@@ -15,10 +15,10 @@ import httpx
 import psycopg2, psycopg2.extras
 
 DSN = os.getenv('POSTGRES_DSN',
-    'host=helix-postgres user=helix password=REDACTED dbname=helix')
+    'host=helix-postgres user=helix dbname=helix')
 EMBEDDINGS_URL = os.getenv('EMBEDDINGS_URL', 'http://helix-embeddings:8000')
 OPENROUTER_KEY = os.getenv('OPENROUTER_API_KEY',
-    'REDACTED')
+    '')
 MODEL = 'anthropic/claude-haiku-4-5'
 EMBED_MODEL = 'bge-large-en-v1.5'
 

@@ -24,7 +24,7 @@ from services.email import send_invite
 logger = logging.getLogger(__name__)
 auth_router = APIRouter(prefix="/api/v1/auth")
 
-JWT_SECRET = os.environ.get("HELIX_JWT_SECRET", "REDACTED")
+JWT_SECRET = os.environ.get("HELIX_JWT_SECRET", "")
 JWT_ALGO   = "HS256"
 JWT_TTL_H  = 24 * 7  # 7 days
 

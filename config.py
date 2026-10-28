@@ -79,11 +79,11 @@ TEMPORAL_DECAY_MIN_FACTOR = 0.3     # Floor — never decay below 30%
 import os as _os
 POSTGRES_DSN = _os.getenv(
     "POSTGRES_DSN",
-    "host=helix-postgres user=helix password=REDACTED dbname=helix"
+    "host=helix-postgres user=helix dbname=helix"
 )
 
 # === OPENROUTER (LLM fallback, OpenAI-compat) ===
-OPENROUTER_API_KEY = _os.getenv("OPENROUTER_API_KEY", "REDACTED")
+OPENROUTER_API_KEY = _os.getenv("OPENROUTER_API_KEY", "")
 OPENROUTER_BASE_URL = "https://openrouter.ai/api/v1"
 # Use haiku via OpenRouter — same model, OpenAI-compat endpoint
 HAIKU_MODEL = _os.getenv("HAIKU_MODEL", "anthropic/claude-haiku-4-5")

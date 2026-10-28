@@ -22,12 +22,12 @@ logger = logging.getLogger(__name__)
 # Superuser DSN (migrations, admin ops)
 POSTGRES_DSN = os.getenv(
     "POSTGRES_DSN",
-    "host=helix-postgres user=helix password=REDACTED dbname=helix"
+    "host=helix-postgres user=helix dbname=helix"
 )
 # App role DSN (runtime, subject to RLS)
 POSTGRES_APP_DSN = os.getenv(
     "POSTGRES_APP_DSN",
-    "host=helix-postgres user=helix_app password=REDACTED dbname=helix"
+    "host=helix-postgres user=helix_app dbname=helix"
 )
 # Current user_id for this process (set per-request via set_current_user)
 _current_user_id: str = "system"

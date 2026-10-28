@@ -230,7 +230,7 @@ services:
     - 8097:8099
     environment:
       HELIX_URL: http://helix-cortex:9050
-      BRIDGE_API_KEY: ${BRIDGE_API_KEY:-REDACTED}
+      BRIDGE_API_KEY: ${BRIDGE_API_KEY}
     volumes:
     - transcript-bridge-data:/app/data
     networks:

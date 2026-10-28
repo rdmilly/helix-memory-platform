@@ -37,7 +37,7 @@ TRANSCRIPT_DIR.mkdir(parents=True, exist_ok=True)
 LOG_DIR.mkdir(parents=True, exist_ok=True)
 
 HELIX_URL = os.getenv("HELIX_URL", "http://helix-cortex:9050")
-API_KEY = os.getenv("BRIDGE_API_KEY", "REDACTED")
+API_KEY = os.getenv("BRIDGE_API_KEY", "")
 
 # Stats tracking
 stats = {

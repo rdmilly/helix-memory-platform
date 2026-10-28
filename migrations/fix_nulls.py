@@ -11,7 +11,7 @@ except ImportError:
 
 import sqlite3
 
-PG_DSN = "host=helix-postgres user=helix password=REDACTED dbname=helix"
+PG_DSN = "host=helix-postgres user=helix dbname=helix"
 
 sq = sqlite3.connect('/app/data/cortex.db')
 pg = psycopg2.connect(PG_DSN)

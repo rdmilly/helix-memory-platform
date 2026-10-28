@@ -11,10 +11,10 @@ import psycopg2.extras
 from neo4j import GraphDatabase
 
 DSN       = os.getenv('POSTGRES_DSN',
-    'host=helix-postgres user=helix password=REDACTED dbname=helix')
+    'host=helix-postgres user=helix dbname=helix')
 NEO4J_URI  = os.getenv('NEO4J_URI',  'bolt://helix-neo4j:7687')
 NEO4J_USER = os.getenv('NEO4J_USER', 'neo4j')
-NEO4J_PASS = os.getenv('NEO4J_PASSWORD', 'REDACTED')
+NEO4J_PASS = os.getenv('NEO4J_PASSWORD', '')
 BATCH      = 100
 
 def run():

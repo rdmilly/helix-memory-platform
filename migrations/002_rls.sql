@@ -8,7 +8,7 @@
 -- ================================================================
 DO $$ BEGIN
   IF NOT EXISTS (SELECT FROM pg_roles WHERE rolname = 'helix_app') THEN
-    CREATE ROLE helix_app LOGIN PASSWORD 'REDACTED';
+    CREATE ROLE helix_app LOGIN PASSWORD '';
   END IF;
 END $$;
 

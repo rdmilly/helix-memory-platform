@@ -25,7 +25,7 @@ logger = logging.getLogger(__name__)
 EMBEDDINGS_URL = os.getenv("EMBEDDINGS_URL", "http://helix-embeddings:8000")
 POSTGRES_DSN   = os.getenv(
     "POSTGRES_DSN",
-    "host=helix-postgres user=helix password=REDACTED dbname=helix"
+    "host=helix-postgres user=helix dbname=helix"
 )
 
 

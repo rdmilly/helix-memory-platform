@@ -25,7 +25,7 @@ from psycopg2.extras import Json
 # ── Config ─────────────────────────────────────────────────────────────────
 SQLITE_PATH = "/app/data/cortex.db"
 BACKUP_DIR  = "/app/data/backups"
-PG_DSN      = "host=helix-postgres user=helix password=REDACTED dbname=helix"
+PG_DSN      = "host=helix-postgres user=helix dbname=helix"
 BATCH_SIZE  = 500
 
 # ── Tables to skip ────────────────────────────────────────────────────────────
